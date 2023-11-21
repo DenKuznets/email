@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            font-weight: 400;
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .background {
+            background-color: black;
+            background-image: url('./images/flash.png'), url('./images/bg.png');
+            background-repeat: no-repeat, repeat;
+            background-position: 30% bottom, left top;
+        }
+
+        .card {
+            position: relative;
+            padding: 15px 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 20px;
+        }
+
+        .card-number {
+            font-size: 30px;
+            font-weight: bold;
+            position: absolute;
+            top: 27px;
+            left: 40px;
+        }
+
+        .card-img {
+            margin-bottom: 14px;
+        }
+
+        .card-text {
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            line-height: 1.2;
+        }
+
+        .card-2 {
+            display: flex;
+            gap: 42px;
+        }
+
+        .card-2>img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .card-2>p {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .card-2 span {
+            margin-top: 15px;
+            font-size: 47px;
+            font-weight: bold;
+            color: #5f64ff;
+            display: block;
+        }
+
+        .phone,
+        .email {
+            margin-right: 8px;
+        }
+
+        .phone::before {
+            content: url('./images/phone.png');
+        }
+
+        .email::before {
+            content: url('./images/email.png');
+        }
+    </style>
+</head>
+
+<body>
+    <div style="overflow: hidden; position: relative; max-width: 1240px; margin: 0 auto; padding: 55px 73px; display: flex; flex-direction: column; height: 100%;"
+        class="background">
+        <div class="row-1" style="display: flex; gap:30px; justify-content: space-between; margin-bottom: 50px;">
+            <div style="width: 262px; height: 76px; flex-shrink: 0;" class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div style="max-width: 744px;  font-size: 46px;" class="predlagaem">
+                <p style="margin-bottom: 25px;">
+
+                    Предлагаем Вам приобрести
+                    наш продукт
+                </p>
+                <p
+                    style="font-size: 70px; font-weight: bold; background-color: #6362fb; border-radius: 20px 0 0 20px; margin-bottom: 25px; padding-left: 20px; width: 797px;">
+                    "МОДУЛЬ ИР"</p>
+                <p style="font-size: 65px; line-height: 1.1; font-weight: bold;">Проверка <br>
+                    исполнительных <br>
+                    производств</p>
+            </div>
+        </div>
+        <div class="row-2"
+            style="background-color: white; background-image: url(./images/row-2-bg.png); border-radius: 25px; padding: 40px; background-position: right; background-repeat: no-repeat;">
+            <div style="max-width: 620px; font-weight: bold;">
+                <p style="font-size: 32px; color: #6362fb;  line-height: 40px; max-width: 620px; margin-bottom: 30px;">
+                    IT
+                    компания Arconix
+                    предоставляет
+                    <span style="display: block; text-transform: uppercase;">
+                        «коробочный продукт»
+                    </span>
+                    Модуля ИР по мониторингу
+                    и обработке информации
+                    об исполнительных производствах
+                </p>
+                <p style="color: #d37b91; font-size: 23px;">Функциональный веб-дизайн интуитивно
+                    понятный пользователю</p>
+            </div>
+        </div>
+        <p style="font-size: 42px; color:#6362fb; font-weight: bold; margin: 50px 0;">Как это работает:</p>
+        <div class="row-3"
+            style=" display: grid; grid-template-columns: 1fr 1fr; column-gap: 36px; row-gap: 37px; margin-bottom: 50px;">
+            <div class="card" style="background-image: url(./images/card1-bg.png);">
+                <div class="card-number">01</div>
+                <div class="card-img">
+                    <img src="./images/card1-img.png" alt="">
+                </div>
+                <p class="card-text">Установка Модуля ИР <br>
+                    у себя на компьютере <br>
+                    в течение 15 минут</p>
+            </div>
+            <div class="card" style="background-image: url(./images/card2-bg.png);">
+                <div class="card-number">02</div>
+                <div class="card-img">
+                    <img src="./images/card2-img.png" alt="">
+                </div>
+                <p class="card-text">Моментальная загрузка
+                    проверяемого Реестра
+                    в формате Microsoft Excel</p>
+            </div>
+            <div class="card" style="background-image: url(./images/card3-bg.png);">
+                <div class="card-number">03</div>
+                <div class="card-img">
+                    <img src="./images/card3-img.png" alt="">
+                </div>
+                <p class="card-text">Проверка Реестра
+                    на соответствие информации
+                    Банка данных
+                    исполнительных
+                    производств, в течение
+                    заданного времени</p>
+            </div>
+            <div class="card" style="background-image: url(./images/card4-bg.png);">
+                <div class="card-number">04</div>
+                <div class="card-img">
+                    <img src="./images/card4-img.png" alt="">
+                </div>
+                <p class="card-text">Выгрузка полученной
+                    информации с указанием
+                    статуса исполнительных
+                    производств и реквизитов,
+                    опубликованных
+                    в общедоступном источнике</p>
+            </div>
+        </div>
+        <div class="row-4"
+            style="margin-bottom: 50px; overflow: hidden; border-radius: 25px; border: 2px solid #6362fb; ">
+            <div style="padding: 20px 25px;">
+                <h1 style="font-size: 42px; font-weight: bold; margin-bottom: 30px;">Модуль ИР позволит Вам:</h1>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; ">
+                    <div class="card-2">
+                        <img src="./images/clock.png" alt="">
+                        <p>сэкономить время <br>
+                            в течении рабочего дня
+                            <span>
+                                в 2,5 раза
+                            </span>
+                        </p>
+                    </div>
+                    <div class="card-2">
+                        <img src="./images/chart.png" alt="">
+                        <p>максимально увеличить
+                            производительность труда
+                            в течении рабочего дня
+                            <span>
+                                более 100%
+                            </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <p
+                style=" background-color: white; display: flex; flex-direction: column; font-size: 40px; color: #d37b91; font-weight: bold; padding: 30px 87px;">
+                С нами
+                Вы будете использовать
+                время
+                <span style="font-size: 50px; color: #5f64ff; align-self: flex-end; text-transform: uppercase;">
+                    максимально эффективно!
+                </span>
+            </p>
+        </div>
+        <div class="row-5"
+            style="position: relative; display: flex; justify-content: space-between; align-items: flex-end;">
+            <div style="font-size: 46px; line-height: 1.2;">
+                г. Москва, <br>
+                Компания
+                <span style="color: #5f64ff; font-weight: bold;">
+                    Arconix
+                </span>
+            </div>
+            <div style="font-size: 35px; line-height: 1.2; text-align: end;">
+                <p>
+                    Контактное лицо
+                    <span style="text-transform: uppercase; font-weight: bold;">
+                        Андрей
+                    </span>
+                </p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; justify-items: end;">
+                    <i class="phone"></i>
+                    <span style="margin:5px 0 3px; font-weight: bold;">
+                        +7 (977) 775-57-39
+                    </span>
+                    <i class="email"></i>
+                    <span style=" font-weight: bold;">
+                        savkinav@gmail.com
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
